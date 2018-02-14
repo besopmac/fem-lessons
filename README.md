@@ -1,2 +1,3 @@
-# fem-lessons
-Frontend Masters Lessons Repo
+# Frontend Masters Lessons
+
+A repository of my lessons made on Frontend Masters.
