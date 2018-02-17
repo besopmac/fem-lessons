@@ -1,0 +1,23 @@
+{
+  "name": "lessons",
+  "version": "1.0.0",
+  "description": "A repository of my lessons made on Frontend Masters.",
+  "main": "variables-let.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/besopmac/fem-lessons.git"
+  },
+  "author": "Bruno Campos <brunosopmac@gmail.com> (https://besopmac.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/besopmac/fem-lessons/issues"
+  },
+  "homepage": "https://github.com/besopmac/fem-lessons#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
