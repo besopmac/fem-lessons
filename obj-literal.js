@@ -1,24 +1,32 @@
-/*
-    Create an object using bracket and dot notation that represents
-    the characters and related data you my find in a Game of Clue
-*/
+/* 
+ * create an object using bracket and dot notation that represents
+ * the characters and related data you my find in a Game of Clue 
+ */
 
-var game = {};
+let game = {};
 
-game.murderer = "?";
-game['weapons'] = [
+game.murderer = '?';
+game.weapons = [
     {   
-        type: 'laser',
-        location: 'lab'
+        'location': 'lab',
+        'type': 'laser'
     },
-    {   type: 'atomic gun',
-        location: 'lab'
+    {
+        'location': 'lab',
+        'type': 'atomic gun'
     },
-    {   type: 'rock',
-        location: 'forrest'
+    {
+        'location': 'forrest',
+        'type': 'rock'
     }
 ]; 
 
 game.name = [];
-game.name.push('Miss Scarlet'); // I'd it right on first attempt!
-game.name[0] = ['Mr. Crowley']; // There is another way to make this...
+
+// i'd it right on first attempt!
+game.name.push('Miss Scarlet'); 
+
+/*
+ * there is another way to make this...
+ * game.name[0] = 'Mr. Crowley';
+ */ 

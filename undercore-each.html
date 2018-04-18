@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>_.each</title>
+</head>
+<body>
+    
+    <script src="underscore.js"></script>
+    <script>
+        function CreateSuspectObjects(name) {
+            return {
+                name: name,
+                color: name.split(' ')[1],
+                speak() { console.log(`my name is ${name}`); }
+            };
+        };
+
+        var suspects = ['Miss Scarlet', 'Colonel Mustard', 'Mr. White'];
+        var suspectsList = [];
+
+        // Exercise
+
+        _.each = function(list, callback) {
+            if (Array.isArray(list)) {
+                // loop through array
+                for (var i = 0; i < list.length; i++) {
+                    // call the callback with a list item
+                    callback(list[i], i, list);
+                }
+                    
+            } else {
+
+            }
+        }
+    </script>
+</body>
+</html>
