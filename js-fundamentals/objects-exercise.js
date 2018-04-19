@@ -1,5 +1,6 @@
 // create a variable, name it animal, and assign it an object literal
 let animal = {},
+    count = 0,
     noises = [];
 
 
@@ -32,11 +33,11 @@ console.log(animal);
 /*
  *  loops...
  *  1. loop through the properties of your animal object.
- *  2. count everytime it loops to keep track of the number of properties on your object.
+ *  2. count every time it loops to keep track of properties on your object.
  *  3. if the key is username, fill in with object's username value.
  *  4. if the key is tagline, fill in with object's tagline value.
  */
-var count = 0;
+
 for (var key in animal) {
     count++;
     if (key === 'username') {
@@ -45,3 +46,9 @@ for (var key in animal) {
         console.log('I like to say: ' + animal[key]);
     }
 }
+
+
+/*
+ *  q. what happens if you return 'Hi my name is ' + ___ inside the loop?
+ *  a. the loop end after return
+ */
