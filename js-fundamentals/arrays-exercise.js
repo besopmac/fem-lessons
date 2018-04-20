@@ -3,7 +3,7 @@
  * an array literal; place at least one element in the array.
  */
 
-let noiseArray = [];
+let noiseArray = ['ping'];
 
 /* 
  * add a noise to the beginning of the noiseArray.
@@ -11,7 +11,7 @@ let noiseArray = [];
  * using bracket notation, add another noise to the end.
  */
 
-noiseArray.push('buzz');
+noiseArray.unshift('buzz');
 noiseArray.push('fizz');
 noiseArray[2] = 'pong';
 
