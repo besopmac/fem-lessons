@@ -107,3 +107,27 @@ let giveMatches = function(farm) {
     }
 }
 giveMatches(myFarm);
+
+
+// eFarmony nesting exercises
+
+// question 1
+let friends = [];
+friends.push(animals[0].username, animals[1].username);
+console.log(friends);
+
+// question 2
+let relationships = {};
+relationships.friends = friends;
+
+console.log(relationships);
+console.log(Object.keys(relationships).length); 
+
+let matches = [];
+relationships.matches = matches;
+relationships.matches.username = animals[0].username;
+
+for (let i =0; i<animals.length; i++) {
+    animals[i].relationships = relationships;
+}
+console.log(animals);
